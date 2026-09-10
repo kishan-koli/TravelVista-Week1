@@ -1,0 +1,682 @@
+/* =========================================
+   TRAVELVISTA — WEEK 1
+   Static Travel Landing Page
+   ========================================= */
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #142536;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* ---------- COMMON ---------- */
+
+.container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e3eaf0;
+}
+
+.nav {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.logo-mark {
+    width: 31px;
+    height: 31px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+    background: #087fce;
+    color: #ffffff;
+
+    font-size: 16px;
+}
+
+.logo > span:last-child {
+    color: #087fce;
+}
+
+
+/* Navigation */
+
+.nav nav {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+}
+
+.nav nav a {
+    font-size: 13px;
+    font-weight: 600;
+    color: #445465;
+
+    transition: 0.2s ease;
+}
+
+.nav nav a:hover,
+.nav nav .active {
+    color: #087fce;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 21px;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.primary,
+.small {
+    background: #087fce;
+    color: #ffffff;
+}
+
+.primary:hover,
+.small:hover {
+    background: #075e98;
+}
+
+.small {
+    padding: 9px 14px;
+    font-size: 11px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 530px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1800&q=90");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Dark overlay */
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(5, 25, 41, 0.88),
+        rgba(5, 25, 41, 0.25)
+    );
+}
+
+
+/* Hero content */
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+
+    padding: 100px 0;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+
+    color: #087fce;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.eyebrow.light {
+    color: #bfe8ff;
+}
+
+.hero h1 {
+    max-width: 700px;
+
+    margin-bottom: 18px;
+
+    font-size: clamp(44px, 6vw, 70px);
+    line-height: 1.03;
+
+    letter-spacing: -2.8px;
+}
+
+.hero-text {
+    max-width: 570px;
+
+    margin-bottom: 28px;
+
+    color: #e6eef4;
+
+    font-size: 16px;
+}
+
+.hero-note {
+    position: absolute;
+
+    right: 7%;
+    bottom: 50px;
+
+    z-index: 1;
+
+    font-size: 20px;
+    line-height: 1.1;
+
+    transform: rotate(-7deg);
+}
+
+
+/* ---------- GENERAL SECTIONS ---------- */
+
+.section {
+    padding: 85px 0;
+}
+
+.packages {
+    background: #f5f8fb;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.heading h2,
+.center h2 {
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.view-link {
+    color: #087fce;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* ---------- DESTINATION CARDS ---------- */
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e3eaf0;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(13, 37, 58, 0.09);
+
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    height: 205px;
+
+    object-fit: cover;
+}
+
+.card div {
+    padding: 17px 18px;
+}
+
+.card h3 {
+    margin-bottom: 4px;
+
+    font-size: 15px;
+}
+
+.card p,
+small {
+    color: #657587;
+
+    font-size: 12px;
+}
+
+
+/* ---------- PACKAGE CARDS ---------- */
+
+.package-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.package {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #e3eaf0;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(13, 37, 58, 0.09);
+
+    transition: 0.25s ease;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+}
+
+.package img {
+    height: 215px;
+
+    object-fit: cover;
+}
+
+.package > div {
+    padding: 18px;
+}
+
+.package h3 {
+    font-size: 17px;
+}
+
+.package footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 16px;
+}
+
+.package strong {
+    color: #087fce;
+
+    font-size: 20px;
+}
+
+
+/* ---------- WHY CHOOSE US ---------- */
+
+.why {
+    padding: 82px 0;
+}
+
+.center {
+    max-width: 650px;
+
+    margin: 0 auto 42px;
+
+    text-align: center;
+}
+
+.center > p:last-child {
+    margin-top: 10px;
+
+    color: #657587;
+
+    font-size: 12px;
+}
+
+.benefits {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.benefits article {
+    padding: 15px;
+
+    text-align: center;
+}
+
+.benefits i {
+    width: 56px;
+    height: 56px;
+
+    display: grid;
+    place-items: center;
+
+    margin: 0 auto 16px;
+
+    border-radius: 50%;
+
+    background: #e8f5fd;
+    color: #087fce;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    font-style: normal;
+}
+
+.benefits h3 {
+    font-size: 15px;
+}
+
+.benefits p {
+    color: #657587;
+
+    font-size: 12px;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta {
+    min-height: 310px;
+
+    position: relative;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+    color: #ffffff;
+
+    background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=90");
+    background-size: cover;
+    background-position: center;
+}
+
+.cta .overlay {
+    background: rgba(5, 25, 41, 0.70);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cta h2 {
+    margin-bottom: 8px;
+
+    font-size: 38px;
+    line-height: 1.1;
+}
+
+.cta-content > p:not(.eyebrow) {
+    margin-bottom: 22px;
+
+    color: #e5edf3;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    padding-top: 58px;
+
+    background: #09243a;
+    color: #d7e3ec;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1.1fr 1.4fr;
+
+    gap: 45px;
+
+    padding-bottom: 45px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+}
+
+.footer p,
+.footer-grid > div > a:not(.logo) {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #91a7b8;
+
+    font-size: 12px;
+}
+
+.footer-logo {
+    margin-bottom: 15px;
+
+    color: #ffffff;
+}
+
+
+/* Newsletter */
+
+.footer form {
+    display: flex;
+
+    max-width: 330px;
+
+    margin-top: 12px;
+}
+
+.footer input {
+    width: 100%;
+    min-width: 0;
+
+    padding: 11px;
+
+    border: 1px solid #294256;
+    border-right: 0;
+
+    border-radius: 7px 0 0 7px;
+
+    background: #112f46;
+    color: #ffffff;
+}
+
+.footer button {
+    padding: 0 14px;
+
+    border: 0;
+    border-radius: 0 7px 7px 0;
+
+    background: #087fce;
+    color: #ffffff;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* Footer bottom */
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 18px 0;
+
+    border-top: 1px solid #20394d;
+
+    color: #70899c;
+
+    font-size: 10px;
+}
+
+
+/* ---------- ACCESSIBILITY ---------- */
+
+.sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+    .nav nav {
+        gap: 18px;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 680px) {
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .nav {
+        flex-wrap: wrap;
+
+        padding: 12px 0;
+    }
+
+    .nav nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        overflow-x: auto;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-note {
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .destination-grid,
+    .package-grid,
+    .benefits,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom {
+        flex-direction: column;
+
+        gap: 6px;
+    }
+}

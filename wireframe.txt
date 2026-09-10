@@ -1,0 +1,243 @@
+ ============================================================
+                 TRAVELVISTA — WEBSITE WIREFRAME
+                 YuvaIntern — Week 1 Project
+============================================================
+
+
+PROJECT:
+TravelVista — Modern Travel & Tourism Landing Page
+
+OBJECTIVE:
+Transform a professional website wireframe into a
+functional static webpage using HTML5 and CSS3.
+
+
+============================================================
+1. HEADER / NAVIGATION
+============================================================
+
+ -----------------------------------------------------------
+|  ▲ TravelVista     Home  Destinations  Packages  About   |
+|                                    Contact     [Book Now] |
+ -----------------------------------------------------------
+
+Components:
+- TravelVista logo
+- Primary navigation links
+- Book Now call-to-action button
+
+
+============================================================
+2. HERO SECTION
+============================================================
+
+ -----------------------------------------------------------
+|                                                           |
+|              LARGE TRAVEL BACKGROUND IMAGE               |
+|                                                           |
+|        TRAVEL • EXPLORE • DISCOVER                        |
+|                                                           |
+|        Explore the World With TravelVista                |
+|                                                           |
+|        Discover breathtaking destinations,                |
+|        thoughtfully curated travel packages,              |
+|        and unforgettable experiences.                     |
+|                                                           |
+|             [ Explore Destinations → ]                    |
+|                                                           |
+|                                      Good Travel          |
+|                                      Good Stories         |
+ -----------------------------------------------------------
+
+Purpose:
+- Introduce the TravelVista brand
+- Create strong visual impact
+- Provide a primary call-to-action
+
+
+============================================================
+3. POPULAR DESTINATIONS
+============================================================
+
+                 TOP DESTINATIONS
+
+                 Popular Destinations
+                                            [View All →]
+
+ -----------------------------------------------------------
+|              |              |              |              |
+|   [IMAGE]    |   [IMAGE]    |   [IMAGE]    |   [IMAGE]    |
+|              |              |              |              |
+|   Manali     |     Goa      |  Rishikesh   |   Jaipur     |
+|              |              |              |              |
+| Mountains    | Beaches      | Spirituality | Heritage     |
+| Adventure    | Nightlife    | Adventure    | Culture      |
+| Peace        | Fun          | Nature       | History      |
+|              |              |              |              |
+ -----------------------------------------------------------
+
+Layout:
+- Four destination cards
+- Image at the top
+- Destination name
+- Short experience description
+
+
+============================================================
+4. TRAVEL PACKAGES
+============================================================
+
+             HANDPICKED EXPERIENCES
+
+             Our Travel Packages
+                                            [View All →]
+
+ -----------------------------------------------------------
+|                  |                  |                     |
+|     [IMAGE]      |     [IMAGE]      |      [IMAGE]        |
+|                  |                  |                     |
+| Himachal         | Europe Explorer  | Thailand Adventure |
+| Explorer         |                  |                     |
+|                  |                  |                     |
+| 5 Days · 4 Nights| 7 Days · 6 Nights| 6 Days · 5 Nights |
+|                  |                  |                     |
+| ₹12,999          | ₹64,999          | ₹39,999             |
+|                  |                  |                     |
+| [View Details]   | [View Details]   | [View Details]      |
+ -----------------------------------------------------------
+
+Layout:
+- Three package cards
+- Travel image
+- Package title
+- Duration
+- Price
+- View Details button
+
+
+============================================================
+5. WHY CHOOSE TRAVELVISTA
+============================================================
+
+                    WHY CHOOSE US?
+
+                 Why Choose TravelVista?
+
+       Everything you need for a simple, safe and
+                   memorable journey.
+
+ -----------------------------------------------------------
+|             |             |             |                |
+|     ✈       |      ◆      |     •••     |       ★        |
+|             |             |             |                |
+|   Curated   | Safe &      |     24/7    | Best Price     |
+| Experiences | Secure      |  Customer   | Guarantee      |
+|             | Travel      |  Support    |                |
+ -----------------------------------------------------------
+
+Features:
+- Curated Experiences
+- Safe & Secure Travel
+- 24/7 Customer Support
+- Best Price Guarantee
+
+
+============================================================
+6. CALL TO ACTION
+============================================================
+
+ -----------------------------------------------------------
+|                                                           |
+|       YOUR NEXT ADVENTURE STARTS HERE                     |
+|                                                           |
+|       Ready for Your Next Adventure?                      |
+|                                                           |
+|       Let TravelVista turn your travel dreams             |
+|       into reality.                                       |
+|                                                           |
+|                    [ Plan Your Trip → ]                   |
+|                                                           |
+ -----------------------------------------------------------
+
+Purpose:
+- Encourage users to take action
+- Create a strong ending before the footer
+
+
+============================================================
+7. FOOTER
+============================================================
+
+ -----------------------------------------------------------
+|  ▲ TravelVista       Quick Links      Contact     Newsletter|
+|                                                           |
+|  Your trusted          Home            Phone       Email   |
+|  travel partner        Destinations    Email       Input   |
+|  for exploring         Packages        Location    [Subscribe]
+|  beautiful             About                              |
+|  destinations.         Contact                            |
+ -----------------------------------------------------------
+
+ -----------------------------------------------------------
+| © 2026 TravelVista. All rights reserved.                  |
+|                                      YuvaIntern · Week 1  |
+ -----------------------------------------------------------
+
+
+============================================================
+8. RESPONSIVE DESIGN
+============================================================
+
+DESKTOP:
+- Four destination cards in one row
+- Three package cards in one row
+- Four benefits in one row
+- Full navigation displayed horizontally
+
+TABLET:
+- Destination cards arranged in two columns
+- Benefits arranged in two columns
+- Footer adapts to two-column layout
+
+MOBILE:
+- Single-column destination cards
+- Single-column package cards
+- Single-column benefits
+- Responsive navigation
+- Content optimized for smaller screens
+
+
+============================================================
+9. TECHNOLOGY
+============================================================
+
+HTML5
+CSS3
+CSS Grid
+CSS Flexbox
+Responsive Media Queries
+Semantic HTML
+
+
+============================================================
+10. FINAL DESIGN FLOW
+============================================================
+
+HEADER
+   ↓
+HERO
+   ↓
+POPULAR DESTINATIONS
+   ↓
+TRAVEL PACKAGES
+   ↓
+WHY CHOOSE TRAVELVISTA
+   ↓
+CALL TO ACTION
+   ↓
+FOOTER
+
+
+============================================================
+END OF WIREFRAME
+============================================================
