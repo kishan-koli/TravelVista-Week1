@@ -26,14 +26,14 @@
             </a>
 
             <nav aria-label="Primary Navigation">
-                <a href="#home" class="active">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#packages">Packages</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#/">Home</a>
+                <a href="#/destinations">Destinations</a>
+                <a href="#/packages">Packages</a>
+                <a href="#/about">About</a>
+                <a href="#/contact">Contact</a>
             </nav>
 
-            <a href="#packages" class="btn primary" aria-label="View available travel packages">
+            <a href="#/packages" class="btn btn-primary" aria-label="View available travel packages">
                 Book Now
             </a>
 
@@ -44,8 +44,10 @@
     <!-- ================= MAIN CONTENT ================= -->
     <main>
 
+        <p id="route-status" class="sr-only" aria-live="polite"></p>
+
         <!-- ================= HERO SECTION ================= -->
-        <section class="hero" id="home">
+        <section class="hero" id="home" data-spa-view="/">
 
             <div class="overlay"></div>
 
@@ -65,7 +67,7 @@
                     curated travel packages, and unforgettable experiences.
                 </p>
 
-                <a href="#destinations" class="btn light-btn" aria-label="Explore popular travel destinations">
+                <a href="#/destinations" class="btn light-btn" aria-label="Explore popular travel destinations">
                     Explore Destinations
                     <span aria-hidden="true">→</span>
                 </a>
@@ -81,7 +83,7 @@
 
 
         <!-- ================= DESTINATIONS ================= -->
-        <section class="section" id="destinations">
+        <section class="section" id="destinations" data-spa-view="/destinations">
 
             <div class="container">
 
@@ -97,7 +99,7 @@
                         </h2>
                     </div>
 
-                    <a href="#destinations" class="view-link">
+                    <a href="#/destinations" class="view-link">
                         View All →
                     </a>
 
@@ -189,7 +191,7 @@
 
 
         <!-- ================= PACKAGES ================= -->
-        <section class="section packages" id="packages">
+        <section class="section" id="packages" data-spa-view="/packages">
 
             <div class="container">
 
@@ -205,7 +207,7 @@
                         </h2>
                     </div>
 
-                    <a href="#packages" class="view-link">
+                    <a href="#/packages" class="view-link">
                         View All →
                     </a>
 
@@ -311,7 +313,7 @@
                                     ₹39,999
                                 </strong>
 
-                                <a href="#" class="btn small" aria-label="View details about this travel package">
+                                <a href="#/packages" class="btn small" aria-label="View details about this travel package">
                                     View Details
                                 </a>
 
@@ -329,7 +331,7 @@
 
 
         <!-- ================= WHY CHOOSE US ================= -->
-        <section class="why" id="about">
+        <section class="section why" id="about" data-spa-view="/about">
 
             <div class="container">
 
@@ -412,7 +414,7 @@
 
 
         <!-- ================= CALL TO ACTION ================= -->
-        <section class="cta">
+        <section class="cta" data-spa-view="/">
 
             <div class="overlay"></div>
 
@@ -430,7 +432,7 @@
                     Let TravelVista turn your travel dreams into reality.
                 </p>
 
-                <a href="#contact" class="btn light-btn" aria-label="Plan your next trip with TravelVista">
+                <a href="#/contact" class="btn light-btn" aria-label="Plan your next trip with TravelVista">
                     Plan Your Trip
                     <span aria-hidden="true">→</span>
                 </a>
@@ -443,14 +445,14 @@
 
 
     <!-- ================= FOOTER ================= -->
-    <footer class="footer" id="contact">
+    <footer class="footer" id="contact" data-spa-view="/contact">
 
         <div class="container footer-grid">
 
             <!-- Brand -->
             <div>
 
-                <a href="#home" class="logo footer-logo">
+                <a href="#/" class="logo footer-logo">
                     <span class="logo-mark">▲</span>
                     Travel<span>Vista</span>
                 </a>
@@ -470,11 +472,11 @@
                     Quick Links
                 </h3>
 
-                <a href="#home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#packages">Packages</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#/">Home</a>
+                <a href="#/destinations">Destinations</a>
+                <a href="#/packages">Packages</a>
+                <a href="#/about">About</a>
+                <a href="#/contact">Contact</a>
 
             </div>
 
@@ -550,7 +552,7 @@
             </span>
 
             <span>
-                YuvaIntern · Week 1 Static Web Page
+                YuvaIntern · Week 5 SPA Simulation
             </span>
 
         </div>

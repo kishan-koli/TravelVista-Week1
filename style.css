@@ -804,3 +804,49 @@ img {
         min-height: 44px;
     }
 }
+
+
+
+/* =========================================
+   WEEK 5 — SPA VIEW TRANSITIONS
+   ========================================= */
+
+/* ---------- SPA PAGE TRANSITION ---------- */
+
+.spa-view-active {
+    animation: spaFadeIn 0.25s ease;
+}
+
+@keyframes spaFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .spa-view-active {
+        animation: none;
+    }
+
+}
+
+
+/* =========================================
+   WEEK 5 — SPA ROUTING FIX
+   ========================================= */
+
+[data-spa-view][hidden] {
+    display: none !important;
+}
