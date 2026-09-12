@@ -679,4 +679,58 @@ small {
 
         gap: 6px;
     }
+} 
+
+
+
+
+/* =========================================
+   WEEK 2 — RESPONSIVE ENHANCEMENT
+   ========================================= */
+
+/* Fluid images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet improvement */
+@media (max-width: 900px) {
+
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        padding: 80px 0;
+    }
+}
+
+/* Mobile improvement */
+@media (max-width: 680px) {
+
+    .heading {
+        gap: 12px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .footer form {
+        width: 100%;
+        max-width: 330px;
+    }
+}
+
+.primary {
+    background: #087fce;
+    color: #ffffff;
+    border: 2px solid #087fce;
+}
+
+.primary:hover {
+    background: #ffffff;
+    color: #087fce;
+    border-color: #ffffff;
 }
