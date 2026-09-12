@@ -722,15 +722,3 @@ img {
         max-width: 330px;
     }
 }
-
-.primary {
-    background: #087fce;
-    color: #ffffff;
-    border: 2px solid #087fce;
-}
-
-.primary:hover {
-    background: #ffffff;
-    color: #087fce;
-    border-color: #ffffff;
-}
